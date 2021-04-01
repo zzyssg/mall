@@ -1,13 +1,15 @@
 <template>
   <div id="app">
-    <router-vue></router-vue>
+    <router-view></router-view>
   </div>
 </template>
 
 <script>
+
+
 export default {
-  name: 'app',
-  components : {
+  name: 'App',
+  components: {
 
   },
   data(){
