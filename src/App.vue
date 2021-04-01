@@ -5,17 +5,18 @@
 </template>
 
 <script>
-
-
 export default {
-  name: 'App',
-  components: {
-    HelloWorld
+  name: 'app',
+  components : {
+
   },
   data(){
     return{
 
     }
+  },
+  mounted(){
+    
   }
 }
 </script>
