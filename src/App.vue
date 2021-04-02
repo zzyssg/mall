@@ -6,7 +6,7 @@
 
 <script>
 
-
+import storage from './storage'
 export default {
   name: 'App',
   components: {
@@ -18,7 +18,10 @@ export default {
     }
   },
   mounted(){
-    
+    //key 必须是字符串
+    // storage.setItem('a',2);
+    storage.setItem('user',{name:'li',age:3});
+    // storage.clear('user');
   }
 }
 </script>
