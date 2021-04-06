@@ -18,12 +18,13 @@ axios.interceptors.response.use(function(response){
   let res = response.data;
   if(res.status == 0){
     let msg = res.data;
-    alert('mag: ' + msg)
+    console.log('mag: ' + msg)
+    return msg;
   }else if(res.status == 10){
     // 跳转至未登录
     window.location.href = '/#/login'
   }else{
-    alert("error")
+    console.log("error")
   }
 })
 

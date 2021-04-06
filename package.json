@@ -28,7 +28,7 @@
     "jsonp": "^0.2.1",
     "mockjs": "^1.1.0",
     "node-sass": "^5.0.0",
-    "sass-loader": "^11.0.1",
+    "sass-loader": "^10.1.0",
     "vue-awesome-swiper": "^4.1.1",
     "vue-axios": "^3.2.4",
     "vue-cookie": "^1.1.4",
