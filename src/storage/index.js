@@ -7,7 +7,7 @@ export default {
             val[key] = value;
             this.setItem(module_name,val);
         }else{
-            let val = this.getStorage();
+            let val = this.getStorage() || {};
             val[key] = value;
             window.sessionStorage.setItem(STORAGE_KEY,JSON.stringify(val));
         }

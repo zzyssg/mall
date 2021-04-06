@@ -6,7 +6,7 @@
 
 <script>
 
-import storage from './storage'
+// import storage from './storage'
 export default {
   name: 'App',
   components: {
@@ -14,14 +14,16 @@ export default {
   },
   data(){
     return{
-
+      result : {}
     }
   },
   mounted(){
-    //key 必须是字符串
-    // storage.setItem('a',2);
-    storage.setItem('user',{name:'li',age:3});
-    // storage.clear('user');
+    // 发送请求
+    this.axios.get('/user/logout').then(
+      (res) => {
+        this.result = res;
+      }
+    )
   }
 }
 </script>
